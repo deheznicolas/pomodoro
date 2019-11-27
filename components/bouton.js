@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bouton(prop) {
+function Button(prop) {
     return (
         <div>
             <button type={"button"} onClick={prop.handleFunc}>
@@ -10,4 +10,4 @@ function Bouton(prop) {
     );
 }
 
-export default Bouton;
+export default Button;
