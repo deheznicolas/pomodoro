@@ -5,6 +5,7 @@ import ReactDOM from "react-dom";
 import Time from "../components/time";
 import Button from "../components/bouton";
 import Modal from "../components/modal";
+import dynamicTitle from "../components/title";
 
 import "../scss/app.scss";
 
