@@ -100,6 +100,19 @@ class App extends React.Component {
     }
 
     handleStart() {
+
+
+
+      console.log(this.defaultTimer);
+      console.log(this.state.seconde);
+
+
+
+
+
+
+
+
         if (!this.state.play) {
             if (this.state.seconde === 0) {
                 this.setState({seconde: this.defaultTimer});
@@ -122,17 +135,25 @@ class App extends React.Component {
         this.handleStart();
     }
 
-    blockButton() {
-      this.blockButtonInc();
-      this.blockButtonDes();
-    }
-
 
 
     render() {
         let playButtonValue = "Go !";
         if (this.state.play) {
             playButtonValue = "Pause";
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
         return (
             <div className={"container"}>
