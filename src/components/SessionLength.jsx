@@ -16,7 +16,7 @@ function SessionLength(props) {
 
 
     return (
-        <section>
+        <section class="QualityWork">
             <h4>Quality work</h4>
             <section className="interval-container">
               <ul>
