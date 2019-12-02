@@ -1,0 +1,119 @@
+
+#maintitle{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color:white;
+}
+
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+li {
+ margin-left:2px;
+ float:left; /*pour IE*/
+ }
+ul li a {
+ display:block;
+ float:left;
+ width:100px;
+ background-color:#6495ED;
+ color:black;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+ }
+
+
+.QPause{
+
+
+}
+
+.interval-length {
+  color:white;
+  font-size:300%;
+}
+
+
+.timer {
+  color:white;
+  font-size:500%;
+  text-align:center;
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+h4{
+  color:white;
+}
+
+
+
+
+html,
+body{
+
+}
+
+#back{
+  background-color: #2D112B ;
+  height: 100vh;
+}
+
+
+.parallax {
+  perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+  z-index: -1;
+}
+
+.parallax__layer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img{
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.parallax__cover{
+  background: #2D112B;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+}
+
+$parallax__layers: 6;
+
+@for $i from 0 through $parallax__layers {
+  $x: ($parallax__layers - $i) / 2;
+  .parallax__layer__#{$i}{
+     transform: translateZ(-100 * $x#{px}) scale($x + 1);
+  }
+}

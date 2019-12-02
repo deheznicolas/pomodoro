@@ -80,7 +80,7 @@ class Timer extends React.Component {
         return (
             <section>
                 <section className="timer-container">
-                    <h4 id="work">{this.state.isSession === true ? "Work" : "Break"}</h4>
+                    <h4 id="work">{this.state.isSession === true ? "Focus Time" : "Pause"}</h4>
                     <div id="minSec"><span className="timer">{this.props.timerMinute}</span>
                         <span className="timer">:</span>
                         <span className="timer">{this.state.timerSecond === 0

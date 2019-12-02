@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from "react-dom";
-import "../scss/app.scss";
-import BreakInterval from './breakInterval';
+
+import BreakInterval from "./breakInterval";
 import SessionLength from './SessionLength';
 import Timer from './Timer';
+import "../scss/app.scss";
 
 class App extends React.Component {
     constructor(props) {
@@ -95,8 +95,7 @@ class App extends React.Component {
 
         return (
             <main>
-                <h2><span id="finest">Finest </span>quality <span id="pomo">Pomodoro</span> !</h2>
-                <img src="https://media.giphy.com/media/h8D41N51028UgwcGKQ/giphy.gif" alt="italian" />
+                <h1 id="maintitle">It's focus time</h1>
                 <section className="interval-length-container">
                     <BreakInterval
                         isPlay={this.state.isPlay}

@@ -18,10 +18,12 @@ function BreakInterval(props) {
     return (
         <section>
             <h4>Quality pause</h4>
-            <section className="interval-container">
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>Down</button>
-                <p className="interval-length">{props.breakInterval}</p>
-                <button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>Up</button>
+            <section className="interval-container" class="QPause">
+            <ul>
+                <li><button disabled={props.isPlay === true ? "disabled" : ""} onClick={decreaseCounter}>Down</button></li>
+                <li><p className="interval-length">{props.breakInterval}</p></li>
+                <li><button disabled={props.isPlay === true ? "disabled" : ""} onClick={increaseCounter}>Up</button></li>
+            </ul>
             </section>
         </section>
     )
